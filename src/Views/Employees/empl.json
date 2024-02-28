@@ -1,0 +1,72 @@
+[
+    {
+    "id": 5599126,
+    "name": "Lalita Joshi PhD",
+    "email": "phd_joshi_lalita@bahringer.test",
+    "gender": "male",
+    "status": "inactive"
+    },
+    {
+    "id": 5599125,
+    "name": "Msgr. Aadi Sethi",
+    "email": "sethi_aadi_msgr@kozey.test",
+    "gender": "male",
+    "status": "active"
+    },
+    {
+    "id": 5599124,
+    "name": "Mahesh Menon",
+    "email": "mahesh_menon@borer-dooley.test",
+    "gender": "male",
+    "status": "active"
+    },
+    {
+    "id": 5599123,
+    "name": "Chandravati Gowda",
+    "email": "gowda_chandravati@smith-bailey.test",
+    "gender": "male",
+    "status": "inactive"
+    },
+    {
+    "id": 5599122,
+    "name": "Durgeshwari Mahajan",
+    "email": "mahajan_durgeshwari@padberg.example",
+    "gender": "male",
+    "status": "inactive"
+    },
+    {
+    "id": 5599121,
+    "name": "Mani Malik",
+    "email": "mani_malik@macgyver.example",
+    "gender": "female",
+    "status": "inactive"
+    },
+    {
+    "id": 5599120,
+    "name": "Brajesh Pandey",
+    "email": "pandey_brajesh@skiles.test",
+    "gender": "male",
+    "status": "active"
+    },
+    {
+    "id": 5599119,
+    "name": "Sarla Khatri",
+    "email": "khatri_sarla@bergstrom.example",
+    "gender": "male",
+    "status": "inactive"
+    },
+    {
+    "id": 5599118,
+    "name": "Amritambu Kakkar",
+    "email": "amritambu_kakkar@daugherty.example",
+    "gender": "male",
+    "status": "inactive"
+    },
+    {
+    "id": 5599117,
+    "name": "Surya Agarwal Esq.",
+    "email": "esq_agarwal_surya@terry.example",
+    "gender": "male",
+    "status": "inactive"
+    }
+    ]
