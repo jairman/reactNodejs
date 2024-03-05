@@ -54,7 +54,7 @@ function ResponsiveDrawer(props) {
     },
     {
       title: "Departments",
-      path: "/departments",
+      path: "/languages2",
       icon: <AccountBalanceIcon />,
     },
     {
@@ -78,7 +78,7 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div>
+    <div  >
       <Toolbar />  {/* espacio en blanco de arriba */ }     
       <Divider />
       <List>
@@ -120,7 +120,7 @@ function ResponsiveDrawer(props) {
 
       <Divider />
 
-      <List>
+      <List >
         {navArrayLinksLogout.map((item) => (
           <ListItem key={item.title} disablePadding sx={{ display: "block" }}>
             <ListItemButton
@@ -157,9 +157,10 @@ function ResponsiveDrawer(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <>
+    < >
     
       <AppBar
+        style={{ background: '#fff' }} // Color del navBar
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
@@ -168,7 +169,7 @@ function ResponsiveDrawer(props) {
       >
         <Toolbar>
           <IconButton
-            color="inherit"
+            color="#f8f9fe"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -176,18 +177,20 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography color="#000" variant="h6" noWrap component="div">
             Tokin
           </Typography>
         </Toolbar>
       </AppBar>
       <Box
+     
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
+       
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -200,18 +203,22 @@ function ResponsiveDrawer(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              background: "#f0f2f5", // Color Panel izquierdo
+             
             },
           }}
         >
           {drawer}
         </Drawer>
         <Drawer
+        
           variant="permanent"
           sx={{
             display: { xs: "none", sm: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              background: "#f0f2f5", // Color Panel izquierdo
             },
           }}
           open

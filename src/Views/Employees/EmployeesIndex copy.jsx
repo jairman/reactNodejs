@@ -158,8 +158,7 @@ export const EmployeesIndex = () => {
     e.preventDefault();
 
 
-   const res = await sendRequest("POST", datos, "/api/employee", "");
-   
+    const res = await sendRequest("POST", datos, "/api/employee", "");
     getEmployees(1);
     console.log(res);
     clear()
@@ -172,8 +171,7 @@ export const EmployeesIndex = () => {
   }, []);
 
   const getEmployees = async () => {
-    //const res = await sendRequest("GET", "", "/api/employee?page=", "");
-    const res = await sendRequest("GET", "", "/api/languages", "");
+    const res = await sendRequest("GET", "", "/api/employee?page=", "");
 
     setEmployees(res);
   };

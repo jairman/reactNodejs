@@ -31,7 +31,15 @@ export class Graphic extends React.Component {
       ["Bob Herm", "Test Corp", "Tampa", "FL"],
       ["James Houston", "Test Corp", "Dallas", "TX"],
     ];
-    const options = { filterType: "checkbox" };
+    const options = { 
+      filterType: "checkbox",
+      selectableRows: false,
+      rowHover: true,
+      filter: false,
+      print: false,
+      download: false,
+      responsive: "scroll",
+     };
 
     return (
       <ThemeProvider theme={darkTheme}>
@@ -39,14 +47,7 @@ export class Graphic extends React.Component {
           title={"Lista de empleados"}
           data={data}
           columns={columns}
-          options={{ 
-            selectableRows: false,
-              rowHover: false,
-              filter: false,
-              print: false,
-              download: false,
-              responsive: "scroll",
-           }}
+          options={ options}
         />
       </ThemeProvider>
     );
